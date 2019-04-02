@@ -1,0 +1,15 @@
+{% load static %}
+<div>
+	<ul class ="menu">
+	<li><a class = "{%  if request.resolver_match.url_name == "index" %}
+	                        active
+                            {% endif %}" href="{% url 'index' %}"> Главная</a></li>
+	<li><a class = "{%  if request.resolver_match.url_name == "catalog" %}
+	                        active
+                            {% endif %}" href="{% url 'catalog' %}"> Каталог</a></li>
+	<li><a class = "{%  if request.resolver_match.url_name == "contacts" %}
+	                        active
+                            {% endif %}" href="{% url 'index' %}"> Контакты</a></li>
+	</ul>
+	<img src="{% static 'img/1.jpg'%}">
+</div>

@@ -1,0 +1,55 @@
+{% extends 'mainapp/base.html' %}
+{% load static %}
+{% block title %}
+    <title>Продукты</title>
+{% endblock %}
+{% block content %}
+    {% include 'mainapp/includes/inc_menu.html' %}
+<div >
+
+	</div >
+	<h1>Мобильные телефоны </h1>
+	<h3 > Краткое описание товара</h3>
+
+
+	<p > <div >
+		<div ><a href="{% static 'img/3.jpg'%}" target="_blank"> <img class="Bord" src="{% static 'img/3.jpg'%}"></a></div>
+		<div ><p >    <b > Мобильные телефоны </b>  - это средство связи, которое в 21 веке должно быть у всех</p>
+		</div>
+		</div>
+		<form >
+			<button  type="buy">Купить</button>
+		</form>
+		<h3    >Характеристики смартфона Xiaomi Pocophone F1 6/128GB</h3>
+		<ul >
+			<li >Цена - 22 400 рублей</li>
+			<li >Операционная система - Android</li>
+			<li >Диагональ экрана - 6.18 дюйм.</li>
+			<li >Количество SIM-карт - 2</li>
+			<li >Память - 128 гб</li>
+			<li >Wi-Fi - есть</li>
+			<li >Емкость аккумулятора - 4000 мА*ч</li>
+
+		</ul>
+	  </p>
+	  <table>
+    <tr>
+        <td>Цена</td>
+        <td>Операционная система</td>
+        <td>Диагональ</td>
+    </tr>
+    <tr>
+        <td>22 400</td>
+        <td>Android</td>
+        <td>6.18</td>
+    </tr>
+</table>
+	  <h3 >Подробное описание смартфона Xiaomi Pocophone F1 6/128GB</h3>
+	  <p >Телефон очень быстрый, игры на ультра летают. Хорошо держит заряд и быстро заряжается.<br> Снимает неплохо, но не сказать, чтобы супер.<br> Распознавание лица работает в основном нормально, но чтобы оно появилось нужно поставить регион Гонконг (sic!)</p>
+	  <div >
+	<p class= >Все права защищены &copy Prosmitsky</p>
+	</div>
+
+
+</div>
+{% endblock %}
