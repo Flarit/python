@@ -1,0 +1,9 @@
+.test-class {
+    color:red;
+}
+.active {
+    background-color: lightblue;
+}
+.category_record.not_active {
+    opacity: 0.5;
+}

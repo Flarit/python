@@ -1,0 +1,29 @@
+{% extends 'mainapp/base.html' %}
+
+{% block title %}
+    <title>Главная</title>
+{% endblock %}
+{% block content %}
+     {% if user.is_authenticated  %}
+        <h1>{{ user.username|title }}</h1>
+         <a href="{% url 'auth:logout' %}">Выйти</a>
+    {% else %}
+        <a href="{% url 'auth:login' %}">Войдите</a>
+         <a href="{% url 'auth:register' %}">Зарегистрируйтесь</a>
+    {% endif %}
+    <div >
+	<h1>StarsMobiles</h1>
+	<p>В StarsMobiles высокий выбор товаров с привлекательными ценами</p>
+
+    <ul>
+        {% for product in products %}
+            <li>{{ product.name }} ({{ product.category }}) </li>
+        {% endfor %}
+    </ul>
+	<div >
+
+	<p >Все права защищены &copy Prosmitsky</p>
+	</div>
+</div>
+{% endblock %}
+</html>
