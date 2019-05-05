@@ -1,0 +1,20 @@
+[
+  {
+    "category": "Myagkie igrushki",
+    "name": "Vinny puh",
+    "price": 1000,
+    "quantity": 5
+  },
+  {
+    "category": "Myagkie igrushki",
+    "name": "Potapich",
+    "price": 2000,
+    "quantity": 1
+  },
+  {
+    "category": "Mashinki",
+    "name": "Vnedorozhnik",
+    "price": 5000,
+    "quantity": 7
+  }
+]

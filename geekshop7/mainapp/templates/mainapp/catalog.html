@@ -1,0 +1,21 @@
+{% extends 'mainapp/base.html' %}
+{% load static %}
+
+{% block title %}
+    <title>Каталог</title>
+{% endblock %}
+{% block content %}
+    {% include 'mainapp/includes/inc_menu.html' %}
+  <div >
+	<h1>Каталог</h1>
+	<div >
+	<div>
+	<a href="{% url 'products' %}"><img src = "{% static 'img/3.jpg'%}" alt="3" /><br>
+	 Xiaomi Pocophone F1 6/128GB</a>
+	</div>
+	 </div>
+	<div >
+	<p >Все права защищены &copy Prosmitsky</p>
+	</div>
+</div>
+{% endblock %}
